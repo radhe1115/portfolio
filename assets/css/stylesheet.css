@@ -61,14 +61,14 @@ main {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
   font-family: Netflix Sans, sans-serif;
   font-size: 10px;
   cursor: pointer;
 }
 .header #middle {
   border: 1px solid black;
-  border-radius: calc(0.25rem - 0.0625rem);
+  border-radius: 40px;
   background-color: rgb(30, 28, 28);
   box-shadow: 0px 0px 5px rgb(169, 169, 169);
 }
@@ -120,12 +120,12 @@ main {
 }
 .cards div {
   border: 1px solid black;
-  border-radius: calc(0.25rem - 0.0625rem);
+  border-radius: 10px;
   background-color: rgb(30, 28, 28);
   box-shadow: 0px 0px 10px rgb(169, 169, 169);
   padding: 20px;
-  margin: 10px;
-  width: 300px;
+  margin: 20px;
+  width: 25%;
 }
 h1 {
   margin: 0.2em 0;
