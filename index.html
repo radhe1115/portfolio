@@ -6,6 +6,149 @@
     <title>My PortFolio</title>
     <link rel="stylesheet" href="/assets/css/stylesheet.css" />
   </head>
+  <style>
+    body {
+      background-color: #1f1c1c;
+      color: rgb(255, 255, 255);
+      font-family: "Alan Sans", sans-serif;
+      font-optical-sizing: auto;
+      margin: 0;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 7%; /* Example height */
+      display: flex;
+      margin-top: 2%;
+      flex-direction: row;
+      justify-content: space-evenly;
+      color: rgb(83, 79, 79);
+      z-index: 1000;
+      font-weight: bold;
+      font-family: Netflix Sans, sans-serif;
+      font-size: 10px;
+    }
+    footer {
+      align-content: center;
+      justify-items: center;
+    }
+    main {
+      margin-top: 8%; /* Same as header height */
+      padding: 2%;
+    }
+    .section {
+      padding-top: 8%; /* space for header */
+      margin-top: -8%;
+      display: flex;
+      flex-direction: row;
+      margin-top: 2%;
+      width: 100%;
+      height: 100%;
+    }
+
+    .header ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 10px;
+    }
+    .header ul li {
+      display: inline;
+      align-content: center;
+      padding: 10px 10px;
+    }
+    .header a:hover {
+      color: #e50914;
+      font-size: 10pt;
+      transform: scale(1.05);
+      transition: transform 0.3s;
+    }
+    .header #right {
+      width: 25%;
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-family: Netflix Sans, sans-serif;
+      font-size: 10px;
+      cursor: pointer;
+    }
+    .header #middle {
+      border: 1px solid black;
+      border-radius: 40px;
+      background-color: rgb(30, 28, 28);
+      box-shadow: 0px 0px 5px rgb(169, 169, 169);
+    }
+    .header a {
+      text-decoration: none;
+      color: white;
+      margin-top: 50px; /* Same as header height */
+    }
+    .header #left {
+      width: 25%;
+      justify-items: center;
+    }
+
+    .header button {
+      border: 1px solid black;
+      border-radius: calc(0.25rem - 0.0625rem);
+      background-color: rgb(30, 28, 28);
+      box-shadow: 0px 0px 10px rgb(169, 169, 169);
+      padding: 10px 20px;
+      color: white;
+    }
+    .header button:hover {
+      background-color: #e50914;
+      cursor: pointer;
+      transform: scale(1.05);
+      transition: transform 0.3s;
+    }
+
+    .left-section {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      width: 50%;
+      margin: 1%;
+    }
+    .right-section {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      width: 50%;
+      margin: 1%;
+    }
+    .cards {
+      display: flex;
+      flex-direction: row;
+      align-content: left;
+    }
+    .cards div {
+      border: 1px solid black;
+      border-radius: 10px;
+      background-color: rgb(30, 28, 28);
+      box-shadow: 0px 0px 10px rgb(169, 169, 169);
+      padding: 20px;
+      margin: 20px;
+      width: 25%;
+    }
+    h1 {
+      margin: 0.2em 0;
+    }
+    h2 {
+      margin: 0.2em 0;
+    }
+    h3 {
+      margin: 0.2em 0;
+    }
+    h4 {
+      margin: 0.2em 0;
+    }
+  </style>
   <body>
     <header class="header">
       <div id="left"></div>
@@ -88,11 +231,12 @@
           <div class="work-card">
             <h2>Automated Attendance Management System</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, illo
-              repellendus. Numquam magni tenetur fugit debitis repellendus facere
-              consectetur, autem quae, sequi eligendi eaque non, beatae assumenda
-              corrupti quod recusandae voluptates adipisci. Fugit suscipit doloribus
-              iusto labore sequi, esse porro voluptatibus nostrum ipsam dolorum.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+              illo repellendus. Numquam magni tenetur fugit debitis repellendus
+              facere consectetur, autem quae, sequi eligendi eaque non, beatae
+              assumenda corrupti quod recusandae voluptates adipisci. Fugit
+              suscipit doloribus iusto labore sequi, esse porro voluptatibus
+              nostrum ipsam dolorum.
             </p>
           </div>
           <div class="work-card">
@@ -108,9 +252,10 @@
             <h2>Gym Inquiry Page</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-              reiciendis recusandae voluptas, earum porro error dicta mollitia in
-              facere excepturi eaque ratione iste ut voluptatum facilis voluptatibus
-              dignissimos aliquam provident! Temporibus non pariatur iure!
+              reiciendis recusandae voluptas, earum porro error dicta mollitia
+              in facere excepturi eaque ratione iste ut voluptatum facilis
+              voluptatibus dignissimos aliquam provident! Temporibus non
+              pariatur iure!
             </p>
           </div>
         </div>
@@ -129,25 +274,25 @@
           <div class="extracurricular-card">
             <h3>Acumen Club</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-              incidunt blanditiis aperiam sed amet? Veritatis repudiandae architecto
-              voluptatum ad eveniet?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate incidunt blanditiis aperiam sed amet? Veritatis
+              repudiandae architecto voluptatum ad eveniet?
             </p>
           </div>
           <div class="extracurricular-card">
             <h3>Young Inspirators Network By Sakal Media Group</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-              pariatur similique repellat, quam sunt dolorum. Magni laudantium qui
-              sequi natus!
+              pariatur similique repellat, quam sunt dolorum. Magni laudantium
+              qui sequi natus!
             </p>
           </div>
           <div class="extracurricular-card">
             <h3>Student President</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
-              reiciendis natus enim minus maiores hic rerum ducimus placeat, quam
-              nulla!
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptatum reiciendis natus enim minus maiores hic rerum ducimus
+              placeat, quam nulla!
             </p>
           </div>
         </div>
