@@ -31,18 +31,31 @@ section {
   margin-top: 5%;
   padding: 20px;
 }
-#home {
+.home {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
   background-color: blanchedalmond;
   color: black;
+  height: 50em;
 }
 #left-section, #right-section {
   width: 50%;
-  height: 100%; /* Full viewport height */
-} 
-
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+}
+.home h1 {
+  font-size: 5em;
+  margin-bottom: 0.5em;
+}
+.home p {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  max-width: 600px;
+  text-align: center;
+}
 .header ul {
   list-style-type: none;
   margin: 0;

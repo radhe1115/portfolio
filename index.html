@@ -4,11 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My PortFolio</title>
-    <link rel="stylesheet" href="/assets/css/stylesheet.css" />
+    <link rel="stylesheet" href="portfolio/assets/css/stylesheet.css" />
   </head>
-  <style>
+  <style></style>
 
-  </style>
   <body>
     <header class="header">
       <div id="middle">
@@ -21,20 +20,21 @@
           <li><a href="#contact">CONTACT</a></li>
         </ul>
       </div>
-      </div>
     </header>
     <main>
-      <section class="section" id="home">
+      <section class="home" id="home">
         <div id="left-section">
           <h1 id="name">Radhakrushna Bhamre</h1>
-          <p>I am a self taught full-stack developer interested in creating websites and other random tools on the internet.</p>
+          <h2>
+            I am a self taught full-stack developer interested in creating
+            Mobile, Web applications
+          </h2>
         </div>
         <div id="right-section">
           <p>
             I'm an aspiring software developer with a passion for creating
             innovative solutions. I have experience in various programming
-            languages and frameworks, and I'm always eager to learn more and
-            take on new challenges.
+            languages and frameworks, and I'm always eager to learn more.
           </p>
           <p>
             Feel free to explore my portfolio to learn more about my skills,
@@ -48,28 +48,44 @@
           <div class="card" id="education-card">
             <h2>Education</h2>
             <ul>
-              <li><a href="#" id="education-link-1">SSC | Scored 86.20% |2023</a></li>
-              <li><a href="#" id="education-link-2">Junior College | Scored 92.00% |2025</a></li>
-              <li><a href="#" id="education-link-3">BE. (Information Technology) | Scored 8.18 CGPA |2023</a></li>
+              <li>
+                HSC | 2017 – 2019 | Scored 180/200 in Computer Science (Bifocal)
+              </li>
+
+              <li>
+                Bachelor of Engineering (B.E.) in Information Technology | 2019
+                – 2023 CGPA: 8.2/10 | Marks: 74.40%
+              </li>
             </ul>
           </div>
 
           <div class="card" id="skills-card">
             <h2>Skills</h2>
             <ul>
-              <li><a href="#" id="skill-java">Java</a></li>
-              <li><a href="#" id="skill-cpp">C++</a></li>
-              <li><a href="#" id="skill-web">Web technologies</a></li>
+              <li>Languages: Java, C++, Python</li>
+              <li>
+                Frameworks & Technologies: Spring Boot, Node.js, Express.js,
+                Angular.js, GraphQL, REST, HTML5, CSS, JavaScript
+              </li>
+              <li>Databases: MySQL, SQL Server, MongoDB</li>
+              <li>
+                Fundamentals : OOP, RDBMS, Design and Analysis of Algorithms
+              </li>
+              <li>Version Control & Collaboration: Git, JIRA, Confluence</li>
+              <li>
+                Softskills : Leadership, Teamwork, Communication Skills, Public
+                Speaking
+              </li>
             </ul>
           </div>
 
           <div class="card" id="extracurricular-card">
             <h2>Extracurricular</h2>
             <ul>
-              <li><a href="#" id="extra-1">National Service Scheme</a></li>
-              <li><a href="#" id="extra-2">Acumen Student Club</a></li>
-              <li><a href="#" id="extra-3">Young Inspirators Network</a></li>
-              <li><a href="#" id="extra-4">Student President</a></li>
+              <li><a href="#" data-popup="popup1" id="extra-1">National Service Scheme</a></li>
+              <li><a href="#" data-popup="popup2" id="extra-2">Acumen Student Club</a></li>
+              <li><a href="#" data-popup="popup3" id="extra-3">Young Inspirators Network</a></li>
+              <li><a href="#" data-popup="popup4" id="extra-4">Student President</a></li>
             </ul>
           </div>
         </div>
@@ -81,24 +97,42 @@
             <h2>Associate Software Developer</h2>
             <h3>Novillex Technologies, Pune</h3>
             <h4>11 Dec. 2024 - Present</h4>
-            <p>
-              <b>Roles & Responsibilities</b><br />
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
-              recusandae aliquam repudiandae facilis natus doloribus, architecto
-              provident, est reiciendis sapiente blanditiis veritatis,
-              necessitatibus vitae ullam eum nesciunt consequatur ratione
-              placeat cumque optio.
-            </p>
+            <b>Roles & Responsibilities</b><br />
+            <ul>
+              <li>
+                Developed and maintained RESTful APIs in a Spring Boot
+                microservicesarchitecture for core banking Software modules.
+                Wrote JUnit test cases for service layer testing, with 100%
+                coverage.
+              </li>
+              <li>
+                Experienced in Writing SQL stored procedures and cursors for
+                better data retrieval keeping available resources in mind.
+              </li>
+              <li>
+                Worked in highly Agile-startup Enviornment, collaborated using
+                JIRA and Confluence For code Documentation.
+              </li>
+            </ul>
           </div>
           <div id="card2">
             <h2>Software Development Intern</h2>
             <h3>Zeftrosoft Technologies, Pune</h3>
             <h4>6 July 2024 - 10 Dec 2024</h4>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
-              voluptas eos sit nemo itaque optio aliquid, provident natus. Quo,
-              consectetur.
-            </p>
+            <ul>
+              <li>
+                Wrote backend services to parse JSON payloads and exposed them
+                via REST and GraphQL APIs using Node.js and Express.js.
+              </li>
+              <li>
+                Designed a dashboard in electron js to display realtime
+                information of digital sensor on screen.
+              </li>
+              <li>
+                Worked in agile sprints and managed tasks via Asana,
+                contributing to a 10% faster delivery timeline.
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -108,34 +142,24 @@
           <div class="work-card">
             <h2>Automated Attendance Management System</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-              illo repellendus. Numquam magni tenetur fugit debitis repellendus
-              facere consectetur, autem quae, sequi eligendi eaque non, beatae
-              assumenda corrupti quod recusandae voluptates adipisci. Fugit
-              suscipit doloribus iusto labore sequi, esse porro voluptatibus
-              nostrum ipsam dolorum.
+              Designed backend using Java and SQL for secure data handling and
+              real-time updates. Developed a web-based attendance system with
+              both frontend and backend logic. Fully replaced Departments pen
+              paper based attendance practice saving time by 50%. Published a
+              research paper documenting the process and benefits to
+              institutional efficiency.
             </p>
           </div>
           <div class="work-card">
             <h2>IoT Dashboard</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              veniam vero iure et, explicabo placeat libero hic, a facilis
-              consequuntur nam ex reprehenderit facere animi non, aut similique
-              praesentium sit vitae earum.
+              Developed asynchronous APIs using Node.js and Express.js for
+              sensor integration. Created basic Dashboard using Angular to show
+              sensor readings. Implemented GraphQL APIs for dynamic queries on
+              MongoDB database.
             </p>
           </div>
-          <div class="work-card">
-            <h2>Gym Inquiry Page</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-              reiciendis recusandae voluptas, earum porro error dicta mollitia
-              in facere excepturi eaque ratione iste ut voluptatum facilis
-              voluptatibus dignissimos aliquam provident! Temporibus non
-              pariatur iure!
-            </p>
-          </div>
-        </div>
+         </div>
       </section>
 
       <section id="blogs">
@@ -145,8 +169,7 @@
           summaries as needed.
         </p>
       </section>
-    </main>
-     <section id="contact">
+      <section id="contact">
         <h1>Contact</h1>
         <p>
           Your contact information goes here. You can add links, email
