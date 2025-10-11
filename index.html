@@ -4,23 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My PortFolio</title>
-    <link rel="stylesheet" href="/portfolio/assets/css/stylesheet.css" />
+    <link rel="stylesheet" href="/assets/css/stylesheet.css" />
   </head>
   <style>
-    div {
-      border: 1px solid rgb(255, 255, 255);
-    }
-    section {
-      border: 1px solid green;
 
-    }
-    header {
-       border: 1px solid red;
-    }
   </style>
   <body>
     <header class="header">
-      <div id="left"></div>
       <div id="middle">
         <ul>
           <li><a href="#home">HOME</a></li>
@@ -28,24 +18,18 @@
           <li><a href="#experience">EXPERIENCE</a></li>
           <li><a href="#works">WORKS</a></li>
           <li><a href="#blogs">BLOGS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </div>
-      <div id="right">
-        <button
-          id="contact-button"
-          onclick="window.location.href='https://www.google.com'"
-        >
-          CONTACT
-        </button>
       </div>
     </header>
     <main>
       <section class="section" id="home">
-        <div class="left-section">
-          <p id="name">Radhakrushna Bhamre</p>
+        <div id="left-section">
+          <h1 id="name">Radhakrushna Bhamre</h1>
           <p>I am a self taught full-stack developer interested in creating websites and other random tools on the internet.</p>
         </div>
-        <div class="right-section">
+        <div id="right-section">
           <p>
             I'm an aspiring software developer with a passion for creating
             innovative solutions. I have experience in various programming
@@ -162,9 +146,16 @@
         </p>
       </section>
     </main>
+     <section id="contact">
+        <h1>Contact</h1>
+        <p>
+          Your contact information goes here. You can add links, email
+          addresses, or any other relevant details.
+        </p>
+      </section>
+    </main>
     <footer id="footer">
       <p>© 2025 Radhakrushna Bhamre. All rights reserved.</p>
     </footer>
-    <script src="/assets/js/include.js"></script>
   </body>
 </html>
