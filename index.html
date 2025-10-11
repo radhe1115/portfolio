@@ -4,8 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My PortFolio</title>
-    <link rel="stylesheet" href="portfolio/assets/css/stylesheet.css" />
+    <link rel="stylesheet" href="assets/css/stylesheet.css" />
   </head>
+  <style>
+    div {
+      border: 1px solid rgb(255, 255, 255);
+    }
+    section {
+      border: 1px solid green;
+
+    }
+    header {
+       border: 1px solid red;
+    }
+  </style>
   <body>
     <header class="header">
       <div id="left"></div>
@@ -15,20 +27,23 @@
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#experience">EXPERIENCE</a></li>
           <li><a href="#works">WORKS</a></li>
-          <li><a href="#extracurricular">EXTRACURRICULAR</a></li>
           <li><a href="#blogs">BLOGS</a></li>
         </ul>
       </div>
-      <div id="right"><button id="contact-button">CONTACT</button></div>
+      <div id="right">
+        <button
+          id="contact-button"
+          onclick="window.location.href='https://www.google.com'"
+        >
+          CONTACT
+        </button>
+      </div>
     </header>
     <main>
       <section class="section" id="home">
         <div class="left-section">
-          <h1>
-            Hi! I’m Radhakrushna Bhamre <br />
-            I warmly welcome you to my portfolio."
-          </h1>
-          <p>This is a brief introduction about myself.</p>
+          <p id="name">Radhakrushna Bhamre</p>
+          <p>I am a self taught full-stack developer interested in creating websites and other random tools on the internet.</p>
         </div>
         <div class="right-section">
           <p>
@@ -44,14 +59,35 @@
         </div>
       </section>
       <section class="section" id="about">
-        <div class="left-section"><h1>About</h1></div>
-        <div class="right-section">
-          <h3>Education</h3>
-          <ul>
-            <li>High School</li>
-            <li>Junior College</li>
-            <li>Graduation</li>
-          </ul>
+        <h1>About</h1>
+        <div class="cards">
+          <div class="card" id="education-card">
+            <h2>Education</h2>
+            <ul>
+              <li><a href="#" id="education-link-1">SSC | Scored 86.20% |2023</a></li>
+              <li><a href="#" id="education-link-2">Junior College | Scored 92.00% |2025</a></li>
+              <li><a href="#" id="education-link-3">BE. (Information Technology) | Scored 8.18 CGPA |2023</a></li>
+            </ul>
+          </div>
+
+          <div class="card" id="skills-card">
+            <h2>Skills</h2>
+            <ul>
+              <li><a href="#" id="skill-java">Java</a></li>
+              <li><a href="#" id="skill-cpp">C++</a></li>
+              <li><a href="#" id="skill-web">Web technologies</a></li>
+            </ul>
+          </div>
+
+          <div class="card" id="extracurricular-card">
+            <h2>Extracurricular</h2>
+            <ul>
+              <li><a href="#" id="extra-1">National Service Scheme</a></li>
+              <li><a href="#" id="extra-2">Acumen Student Club</a></li>
+              <li><a href="#" id="extra-3">Young Inspirators Network</a></li>
+              <li><a href="#" id="extra-4">Student President</a></li>
+            </ul>
+          </div>
         </div>
       </section>
       <section id="experience">
@@ -117,43 +153,7 @@
           </div>
         </div>
       </section>
-      <section id="extracurricular">
-        <h1>Extracurricular Activities</h1>
-        <div class="cards">
-          <div class="extracurricular-card">
-            <h3>National Service Scheme</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, et?
-              Mollitia totam quos ea vitae ullam repudiandae molestiae corrupti
-              incidunt?
-            </p>
-          </div>
-          <div class="extracurricular-card">
-            <h3>Acumen Club</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate incidunt blanditiis aperiam sed amet? Veritatis
-              repudiandae architecto voluptatum ad eveniet?
-            </p>
-          </div>
-          <div class="extracurricular-card">
-            <h3>Young Inspirators Network By Sakal Media Group</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-              pariatur similique repellat, quam sunt dolorum. Magni laudantium
-              qui sequi natus!
-            </p>
-          </div>
-          <div class="extracurricular-card">
-            <h3>Student President</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Voluptatum reiciendis natus enim minus maiores hic rerum ducimus
-              placeat, quam nulla!
-            </p>
-          </div>
-        </div>
-      </section>
+
       <section id="blogs">
         <h1>Blogs</h1>
         <p>
